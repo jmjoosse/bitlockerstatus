@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="feb5c648-9879-48dc-8425-433e7f10afbe" Name="Bitlocker extended" Description="cmV0cmlldmVzIGFsbCBiaXRsb2NrZXIgaW5mbw==" Version="2.6.0.6" RemoteCategory="0" ExecutionType="Local" PS3ObjectCount="0">
+  <Object ID="{afedf25e-6b39-4adc-8a2c-839990609a8f}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml&gt;&lt;OutputParameters&gt;&lt;Parameter ParameterName=&quot;mountpoint&quot; Label=&quot;mountpoint&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.mountpoint&quot; /&gt;&lt;Parameter ParameterName=&quot;ProtectionStatus&quot; Label=&quot;Protection Status&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.protectionstatus&quot; /&gt;&lt;Parameter ParameterName=&quot;EncryptionPercentage&quot; Label=&quot;Encryption Percentage&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.encryptionpercentage&quot; /&gt;&lt;Parameter ParameterName=&quot;Volumestatus&quot; Label=&quot;Volume Status&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.volumestatus&quot; /&gt;&lt;Parameter ParameterName=&quot;Key&quot; Label=&quot;Encryption Key&quot; ParameterType=&quot;string&quot; Value=&quot;Run PowerShell Script.key&quot; /&gt;&lt;/OutputParameters&gt;&lt;/xml&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>a4b7a6e9-66b4-4f8b-8ef6-5bd6c55a8048.mountpoint</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>mountpoint</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>a4b7a6e9-66b4-4f8b-8ef6-5bd6c55a8048.protectionstatus</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>ProtectionStatus</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>a4b7a6e9-66b4-4f8b-8ef6-5bd6c55a8048.encryptionpercentage</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>EncryptionPercentage</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>a4b7a6e9-66b4-4f8b-8ef6-5bd6c55a8048.volumestatus</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>Volumestatus</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>a4b7a6e9-66b4-4f8b-8ef6-5bd6c55a8048.key</d2p1:m_Item1>
+        <d2p1:m_Item2>OutputObject</d2p1:m_Item2>
+        <d2p1:m_Item3></d2p1:m_Item3>
+        <d2p1:m_Item4>Key</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+    </hashset>
+  </LinkManager>
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>504,745</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy Builder" sap:VirtualizedContainerService.HintSize="504,745" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:RunPowerShellScript AssemblyName="PolicyExecutionEngine, Version=2.6.0.6, Culture=neutral, PublicKeyToken=null" DisplayName="Run PowerShell Script" sap:VirtualizedContainerService.HintSize="468,522" Moniker="a4b7a6e9-66b4-4f8b-8ef6-5bd6c55a8048" OutPut_64="[RunPowerShellScript_OutPut_64]" Result="[RunPowerShellScript_Result]" ResultString="[RunPowerShellScript_ResultString]" Results_x64="[RunPowerShellScript_Results_x64]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="RunPowerShellScript" genArgEvent="9c710b96-af6d-4dde-aa80-89a9b10f3c5b" m_bTextLinkChange="False" script="JABtAG8AdQBuAHQAcABvAGkAbgB0ACAAPQAgAEcAZQB0AC0AQgBpAHQATABvAGMAawBlAHIAVgBvAGwAdQBtAGUAIAB8ACAAPwAgAHsAJABfAC4ASwBlAHkAUAByAG8AdABlAGMAdABvAHIALgBLAGUAeQBQAHIAbwB0AGUAYwB0AG8AcgBUAHkAcABlACAALQBlAHEAIAAcIFIAZQBjAG8AdgBlAHIAeQBQAGEAcwBzAHcAbwByAGQAHSB9ACAAfAAgAFMAZQBsAGUAYwB0ACAALQBlAHgAcABhAG4AZABwAHIAbwBwAGUAcgB0AHkAIABNAG8AdQBuAHQAUABvAGkAbgB0AA0ACgAkAHAAcgBvAHQAZQBjAHQAaQBvAG4AcwB0AGEAdAB1AHMAIAA9ACAARwBlAHQALQBCAGkAdABMAG8AYwBrAGUAcgBWAG8AbAB1AG0AZQAgAHwAIAA/ACAAewAkAF8ALgBLAGUAeQBQAHIAbwB0AGUAYwB0AG8AcgAuAEsAZQB5AFAAcgBvAHQAZQBjAHQAbwByAFQAeQBwAGUAIAAtAGUAcQAgABwgUgBlAGMAbwB2AGUAcgB5AFAAYQBzAHMAdwBvAHIAZAAdIH0AIAB8ACAAUwBlAGwAZQBjAHQAIAAtAGUAeABwAGEAbgBkAHAAcgBvAHAAZQByAHQAeQAgAFAAcgBvAHQAZQBjAHQAaQBvAG4AUwB0AGEAdAB1AHMADQAKACQAZQBuAGMAcgB5AHAAdABpAG8AbgBwAGUAcgBjAGUAbgB0AGEAZwBlACAAPQAgAEcAZQB0AC0AQgBpAHQATABvAGMAawBlAHIAVgBvAGwAdQBtAGUAIAB8ACAAPwAgAHsAJABfAC4ASwBlAHkAUAByAG8AdABlAGMAdABvAHIALgBLAGUAeQBQAHIAbwB0AGUAYwB0AG8AcgBUAHkAcABlACAALQBlAHEAIAAcIFIAZQBjAG8AdgBlAHIAeQBQAGEAcwBzAHcAbwByAGQAHSB9ACAAfAAgAFMAZQBsAGUAYwB0ACAALQBlAHgAcABhAG4AZABwAHIAbwBwAGUAcgB0AHkAIABFAG4AYwByAHkAcAB0AGkAbwBuAFAAZQByAGMAZQBuAHQAYQBnAGUAIAANAAoAJAB2AG8AbAB1AG0AZQBzAHQAYQB0AHUAcwAgAD0AIABHAGUAdAAtAEIAaQB0AEwAbwBjAGsAZQByAFYAbwBsAHUAbQBlACAAfAAgAD8AIAB7ACQAXwAuAEsAZQB5AFAAcgBvAHQAZQBjAHQAbwByAC4ASwBlAHkAUAByAG8AdABlAGMAdABvAHIAVAB5AHAAZQAgAC0AZQBxACAAHCBSAGUAYwBvAHYAZQByAHkAUABhAHMAcwB3AG8AcgBkAB0gfQAgAHwAIABTAGUAbABlAGMAdAAgAC0AZQB4AHAAYQBuAGQAcAByAG8AcABlAHIAdAB5ACAAVgBvAGwAdQBtAGUAcwB0AGEAdAB1AHMADQAKACQAawBlAHkAIAA9ACAARwBlAHQALQBCAGkAdABMAG8AYwBrAGUAcgBWAG8AbAB1AG0AZQAgAHwAIAA/ACAAewAkAF8ALgBLAGUAeQBQAHIAbwB0AGUAYwB0AG8AcgAuAEsAZQB5AFAAcgBvAHQAZQBjAHQAbwByAFQAeQBwAGUAIAAtAGUAcQAgABwgUgBlAGMAbwB2AGUAcgB5AFAAYQBzAHMAdwBvAHIAZAAdIH0AIAB8ACAAUwBlAGwAZQBjAHQALQBPAGIAagBlAGMAdAAgAEAAewBMAGEAYgBlAGwAPQAZIEsAZQB5ABkgOwBFAHgAcAByAGUAcwBzAGkAbwBuAD0AewAcICQAKAAkAF8ALgBLAGUAeQBQAHIAbwB0AGUAYwB0AG8AcgAuAFIAZQBjAG8AdgBlAHIAeQBQAGEAcwBzAHcAbwByAGQAKQAdIH0AfQA=">
+          <p:RunPowerShellScript.InArgs>
+            <scg:Dictionary x:TypeArguments="x:String, p:InArg" />
+          </p:RunPowerShellScript.InArgs>
+          <p:RunPowerShellScript.OutArgs>
+            <p:OutArg x:Key="mountpoint" ArgType="string" DisplayName="mountpoint" Name="mountpoint">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_mountpoint]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="protectionstatus" ArgType="string" DisplayName="protectionstatus" Name="protectionstatus">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_protectionstatus]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="encryptionpercentage" ArgType="string" DisplayName="encryptionpercentage" Name="encryptionpercentage">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_encryptionpercentage]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="volumestatus" ArgType="string" DisplayName="volumestatus" Name="volumestatus">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_volumestatus]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+            <p:OutArg x:Key="key" ArgType="string" DisplayName="key" Name="key">
+              <p:OutArg.Arg>
+                <OutArgument x:TypeArguments="x:String">[RunPowerShellScript_key]</OutArgument>
+              </p:OutArg.Arg>
+            </p:OutArg>
+          </p:RunPowerShellScript.OutArgs>
+        </p:RunPowerShellScript>
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_OutPut_64" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_ResultString" />
+        <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="RunPowerShellScript_Results_x64" />
+        <Variable x:TypeArguments="x:Double" Name="RunPowerShellScript_Result" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_mountpoint" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_protectionstatus" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_encryptionpercentage" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_volumestatus" />
+        <Variable x:TypeArguments="x:String" Name="RunPowerShellScript_key" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>
